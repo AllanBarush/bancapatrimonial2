@@ -1,1 +1,727 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>RiskMathics — Proximamente</title><style>body{font-family:Poppins,Arial,sans-serif;background:#0a1f3c;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}</style></head><body><h1>RiskMathics Financial Institute — Proximamente</h1></body></html>
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banca Patrimonial Holística Nivel II — Executive Program | PWMI</title>
+<meta name="description" content="Programa Ejecutivo de Banca Patrimonial Holística Nivel II — Avanzado del Private Wealth Management Institute (PWMI). 12 módulos, 180 horas, Virtual LIVE, inicio Noviembre 2026. FX avanzado, derivados, alternativas, fideicomisos, tax cross-border y family governance para banqueros patrimoniales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        pw: {
+          ink: '#0D1424',
+          navy: '#1B2A4A',
+          navy2: '#2E4070',
+          ember: '#2B1B14',
+          accent: '#C4572A',
+          accent2: '#D96A3B',
+          gold: '#C9A84C',
+          cream: '#FAF8F0',
+          mist: '#A8B4CC'
+        }
+      },
+      fontFamily: {
+        display: ['Poppins', 'sans-serif'],
+        body: ['Lora', 'Georgia', 'serif']
+      }
+    }
+  }
+}
+</script>
+<style>
+html { scroll-behavior: smooth; }
+body {
+  background: linear-gradient(135deg, #0D1424 0%, #1B2A4A 58%, #2B1B14 100%);
+  background-attachment: fixed;
+  color: #FAF8F0;
+  -webkit-font-smoothing: antialiased;
+}
+h1,h2,h3,h4,h5,h6 { font-family: 'Poppins', sans-serif; }
+p, li { font-family: 'Lora', Georgia, serif; }
+.accent-line { width: 50px; height: 2px; background: #C4572A; margin: 1.4rem auto; }
+.accent-line-left { width: 50px; height: 2px; background: #C4572A; margin: 1.4rem 0; }
+.acc-content { max-height: 0; overflow: hidden; transition: max-height .45s ease; }
+.acc-content.open { max-height: 3200px; }
+.acc-btn .chev { transition: transform .3s ease; }
+.acc-btn.open .chev { transform: rotate(45deg); }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0D1424; }
+::-webkit-scrollbar-thumb { background: #C4572A; border-radius: 8px; }
+.chart-shell { position: relative; width: 100%; height: 46vh; min-height: 300px; max-height: 460px; }
+</style>
+</head>
+<body class="font-body">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 backdrop-blur-md bg-pw-ink/85 border-b border-pw-accent/30">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4" style="height:72px;">
+    <a href="#top" class="font-display font-bold tracking-[0.12em] text-pw-cream text-sm sm:text-base whitespace-nowrap">PWMI <span class="text-pw-accent">·</span> NIVEL II</a>
+    <div class="flex items-center gap-4 md:gap-5">
+      <a href="#curriculum" class="hidden lg:inline-block font-display font-semibold text-sm text-pw-mist hover:text-pw-cream transition whitespace-nowrap py-2 px-2">Temario</a>
+      <a href="#rm-enroll" class="hidden sm:inline-block font-display font-semibold text-sm text-pw-cream border border-pw-cream/30 rounded-lg hover:border-pw-accent2 hover:text-pw-accent2 transition whitespace-nowrap" style="padding:10px 22px;">Quiero el temario</a>
+      <a href="#rm-enroll" class="inline-block font-display font-bold text-sm bg-pw-accent text-white rounded-lg hover:bg-pw-accent2 transition whitespace-nowrap" style="padding:10px 22px;">Inscribirse</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="relative overflow-hidden">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-28 text-center">
+    <p class="font-display font-semibold text-pw-gold tracking-[0.3em] text-xs sm:text-sm uppercase mb-6">Private Wealth Management Institute</p>
+    <div class="inline-flex items-center gap-3 border border-pw-accent/50 rounded-full px-6 py-2 mb-10">
+      <span class="w-2 h-2 rounded-full bg-pw-accent inline-block"></span>
+      <span class="font-display font-semibold text-xs sm:text-sm tracking-[0.18em] uppercase text-pw-cream whitespace-nowrap">Virtual LIVE · Inicio Noviembre 2026</span>
+    </div>
+    <h1 class="font-display font-extrabold uppercase text-pw-cream leading-tight text-4xl sm:text-5xl lg:text-6xl" style="letter-spacing:0.06em;">Banca Patrimonial<br>Holística</h1>
+    <div class="accent-line"></div>
+    <h2 class="font-display font-bold uppercase text-pw-accent2 text-lg sm:text-2xl" style="letter-spacing:0.15em;">Nivel II — Avanzado · Executive Program</h2>
+    <p class="italic text-pw-mist text-lg sm:text-xl max-w-2xl mx-auto mt-8 leading-relaxed">Del banquero patrimonial al arquitecto financiero: domina FX avanzado, derivados, alternativas, fideicomisos y fiscalidad cross-border para clientes de $3M–$15M MXN.</p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+      <a href="#rm-enroll" class="font-display font-bold text-base bg-pw-accent text-white rounded-lg hover:bg-pw-accent2 transition whitespace-nowrap w-full sm:w-auto text-center" style="padding:16px 38px;">Inscribirse ahora</a>
+      <a href="#rm-enroll" class="font-display font-semibold text-base text-pw-cream border border-pw-cream/40 rounded-lg hover:border-pw-accent2 hover:text-pw-accent2 transition whitespace-nowrap w-full sm:w-auto text-center" style="padding:16px 38px;">Quiero el temario</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-pw-mist/20 pt-10 mt-20 max-w-3xl mx-auto">
+      <div>
+        <p class="font-display font-extrabold text-3xl text-pw-accent2">12</p>
+        <p class="font-display text-xs text-pw-mist uppercase tracking-widest mt-1">Módulos avanzados</p>
+      </div>
+      <div>
+        <p class="font-display font-extrabold text-3xl text-pw-accent2">180</p>
+        <p class="font-display text-xs text-pw-mist uppercase tracking-widest mt-1">Horas de formación</p>
+      </div>
+      <div>
+        <p class="font-display font-extrabold text-3xl text-pw-accent2">9</p>
+        <p class="font-display text-xs text-pw-mist uppercase tracking-widest mt-1">Meses · clases de 2h</p>
+      </div>
+      <div>
+        <p class="font-display font-extrabold text-3xl text-pw-accent2">+$4M</p>
+        <p class="font-display text-xs text-pw-mist uppercase tracking-widest mt-1">USD AUM neto / año objetivo</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- EXECUTIVE SUMMARY -->
+<section class="py-24 bg-pw-ink/40">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="font-display font-semibold text-pw-gold tracking-[0.25em] text-xs uppercase">Executive Summary</p>
+    <h2 class="font-display font-bold uppercase text-pw-cream text-2xl sm:text-4xl mt-4" style="letter-spacing:0.08em;">La era dorada de la riqueza privada</h2>
+    <div class="accent-line"></div>
+    <p class="text-pw-cream/85 text-lg leading-relaxed max-w-3xl mx-auto">El patrimonio financiero global alcanzó <strong class="text-pw-accent2">$305 billones de USD</strong> en 2024. El Great Wealth Transfer moverá <strong class="text-pw-accent2">$83.5 billones</strong> hacia las nuevas generaciones para 2048 — y el <strong class="text-pw-accent2">81% de los herederos</strong> planea cambiar de firma tras recibir la herencia. El banquero que hoy maneja clientes de $3M–$15M MXN ya no compite contra el banco de la esquina: compite contra estructuras cross-border, fondos de alternativas y family offices con sofisticación institucional.</p>
+    <p class="italic text-pw-mist text-lg mt-8">La batalla por el cliente avanzado ya empezó — y la gana quien tenga mayor sofisticación técnica.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+      <div class="border border-pw-mist/15 rounded-xl p-6">
+        <p class="font-display font-extrabold text-2xl text-pw-cream">$305T</p>
+        <p class="font-display text-[11px] text-pw-mist uppercase tracking-widest mt-2">Patrimonio financiero global 2024</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-6">
+        <p class="font-display font-extrabold text-2xl text-pw-cream">$90.5T</p>
+        <p class="font-display text-[11px] text-pw-mist uppercase tracking-widest mt-2">Riqueza HNWI global</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-6">
+        <p class="font-display font-extrabold text-2xl text-pw-cream">+6.2%</p>
+        <p class="font-display text-[11px] text-pw-mist uppercase tracking-widest mt-2">Crecimiento UHNWI 2024</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-6">
+        <p class="font-display font-extrabold text-2xl text-pw-cream">$83.5T</p>
+        <p class="font-display text-[11px] text-pw-mist uppercase tracking-widest mt-2">Gran transferencia patrimonial a 2048</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJETIVO -->
+<section class="py-24">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="border border-pw-accent/40 rounded-2xl p-10 sm:p-14 text-center bg-pw-navy/30">
+      <p class="font-display font-semibold text-pw-gold tracking-[0.25em] text-xs uppercase">Objetivo del programa</p>
+      <div class="accent-line"></div>
+      <p class="font-display font-semibold text-pw-cream text-xl sm:text-2xl leading-relaxed">Convertir al banquero con 1–2 años de experiencia en un <span class="text-pw-accent2">Relationship Manager Premium</span>: capaz de estructurar coberturas FX, portafolios de renta fija por duración, notas con capital protegido, asset allocation con alternativas, fideicomisos y planes fiscales cross-border México–USA.</p>
+      <p class="italic text-pw-mist text-lg mt-8">Meta cuantificable: +$4M USD de AUM neto nuevo por año, cartera de 18–25 clientes premium y retention rate next-gen superior al 60%.</p>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ AHORA (CHART) -->
+<section class="py-24 bg-pw-ink/40">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <p class="font-display font-semibold text-pw-gold tracking-[0.25em] text-xs uppercase">Por qué ahora</p>
+      <h2 class="font-display font-bold uppercase text-pw-cream text-2xl sm:text-4xl mt-4" style="letter-spacing:0.08em;">México en el epicentro del nearshoring</h2>
+      <div class="accent-line"></div>
+      <p class="text-pw-cream/85 text-lg max-w-3xl mx-auto leading-relaxed">Inversión extranjera directa récord de <strong class="text-pw-accent2">$40.87B USD en 2025</strong>, ~172,000 millonarios mexicanos creciendo al 6.8% anual y un mercado de wealth management que crece a doble dígito. El cliente nearshoring no necesita un vendedor de productos: necesita un asesor que domine FX forwards, opciones de divisa, tax cross-border y fideicomisos.</p>
+    </div>
+    <div class="bg-pw-ink/60 border border-pw-mist/15 rounded-2xl p-6 sm:p-8 mt-14">
+      <div class="chart-shell"><canvas id="wealthChart"></canvas></div>
+      <p class="font-display text-[11px] text-pw-mist text-center mt-4 tracking-wide uppercase">Patrimonio financiero global (billones USD). Datos ilustrativos — estimación PWMI con base en BCG Global Wealth Report 2024, PwC AM Revolution 2030 y Capgemini WWR 2025.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MATRIZ DE IMPACTO -->
+<section class="py-24">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <p class="font-display font-semibold text-pw-gold tracking-[0.25em] text-xs uppercase">Matriz de impacto</p>
+      <h2 class="font-display font-bold uppercase text-pw-cream text-2xl sm:text-4xl mt-4" style="letter-spacing:0.08em;">ROI cuantificable para el banquero</h2>
+      <div class="accent-line"></div>
+    </div>
+    <div class="overflow-x-auto rounded-2xl border border-pw-mist/15 mt-10">
+      <table class="min-w-full text-left">
+        <thead>
+          <tr class="bg-pw-navy/50">
+            <th class="font-display text-xs uppercase tracking-widest text-pw-gold py-4 px-6">Métrica</th>
+            <th class="font-display text-xs uppercase tracking-widest text-pw-mist py-4 px-6 whitespace-nowrap">Antes Nivel II</th>
+            <th class="font-display text-xs uppercase tracking-widest text-pw-cream py-4 px-6 whitespace-nowrap">Después Nivel II</th>
+            <th class="font-display text-xs uppercase tracking-widest text-pw-accent2 py-4 px-6">Delta</th>
+          </tr>
+        </thead>
+        <tbody class="text-pw-cream/90">
+          <tr class="border-t border-pw-mist/10"><td class="py-4 px-6 font-display font-semibold text-sm">AUM por banquero</td><td class="py-4 px-6">$15M MXN promedio</td><td class="py-4 px-6">$35M MXN objetivo</td><td class="py-4 px-6 font-display font-bold text-pw-accent2">+133%</td></tr>
+          <tr class="border-t border-pw-mist/10"><td class="py-4 px-6 font-display font-semibold text-sm">Clientes premium ($3M+)</td><td class="py-4 px-6">8–12 clientes</td><td class="py-4 px-6">18–25 clientes</td><td class="py-4 px-6 font-display font-bold text-pw-accent2">+~100%</td></tr>
+          <tr class="border-t border-pw-mist/10"><td class="py-4 px-6 font-display font-semibold text-sm">Net new AUM / año</td><td class="py-4 px-6">$2M USD</td><td class="py-4 px-6">$4M USD</td><td class="py-4 px-6 font-display font-bold text-pw-accent2">+$2M USD</td></tr>
+          <tr class="border-t border-pw-mist/10"><td class="py-4 px-6 font-display font-semibold text-sm">Retention rate next-gen</td><td class="py-4 px-6">~30%</td><td class="py-4 px-6">~65%</td><td class="py-4 px-6 font-display font-bold text-pw-accent2">+35 pp</td></tr>
+          <tr class="border-t border-pw-mist/10"><td class="py-4 px-6 font-display font-semibold text-sm">Productos cross-sell</td><td class="py-4 px-6">2.1 por cliente</td><td class="py-4 px-6">4.3 por cliente</td><td class="py-4 px-6 font-display font-bold text-pw-accent2">+2.2x</td></tr>
+          <tr class="border-t border-pw-mist/10"><td class="py-4 px-6 font-display font-semibold text-sm">NPS cliente avanzado</td><td class="py-4 px-6">35–45</td><td class="py-4 px-6">60–75</td><td class="py-4 px-6 font-display font-bold text-pw-accent2">+25 pts</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="font-display text-[11px] text-pw-mist text-center mt-4 tracking-wide uppercase">Fuentes: BCG · Capgemini · UBS · IMARC Group · Estimaciones PWMI con base en benchmarks del sector.</p>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="py-24 bg-pw-ink/40">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <p class="font-display font-semibold text-pw-gold tracking-[0.25em] text-xs uppercase">Highlights</p>
+      <h2 class="font-display font-bold uppercase text-pw-cream text-2xl sm:text-4xl mt-4" style="letter-spacing:0.08em;">Lo que hace único al Nivel II</h2>
+      <div class="accent-line"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+      <div class="border border-pw-mist/15 rounded-xl p-7 hover:border-pw-accent/60 transition">
+        <p class="font-display font-bold text-pw-accent2 text-sm uppercase tracking-widest">12 módulos técnicos</p>
+        <p class="text-pw-cream/80 text-sm mt-3 leading-relaxed">180 horas con instructores en activo en las principales instituciones financieras de México. Cada módulo con ejercicios en Excel profesional y capstone aplicable.</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 hover:border-pw-accent/60 transition">
+        <p class="font-display font-bold text-pw-accent2 text-sm uppercase tracking-widest">Capstone final integrador</p>
+        <p class="text-pw-cream/80 text-sm mt-3 leading-relaxed">Un Full Wealth Plan avanzado para cliente de $800k USD con defensa ante panel de profesionales del sector — el entregable de un banker senior real.</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 hover:border-pw-accent/60 transition">
+        <p class="font-display font-bold text-pw-accent2 text-sm uppercase tracking-widest">12+ toolkits Excel</p>
+        <p class="text-pw-cream/80 text-sm mt-3 leading-relaxed">FX Option Pricer, Yield Curve Builder, DCF Model, Black-Litterman, Greeks Calculator, Cross-Border Tax Calculator, Insurance Portfolio Analyzer y más.</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 hover:border-pw-accent/60 transition">
+        <p class="font-display font-bold text-pw-accent2 text-sm uppercase tracking-widest">5 casos nearshoring</p>
+        <p class="text-pw-cream/80 text-sm mt-3 leading-relaxed">Empresa Tier 1 en Nuevo León, sudden wealth de $15M MXN, conflicto sucesorio, portafolio anti-inflación y CFO cross-border. Situaciones reales, soluciones reales.</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 hover:border-pw-accent/60 transition">
+        <p class="font-display font-bold text-pw-accent2 text-sm uppercase tracking-widest">Red PWMI</p>
+        <p class="text-pw-cream/80 text-sm mt-3 leading-relaxed">Red de egresados en BBVA, Santander, Banorte, Actinver, GBM y family offices; mentoring con directores senior y eventos de networking.</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 hover:border-pw-accent/60 transition">
+        <p class="font-display font-bold text-pw-accent2 text-sm uppercase tracking-widest">Formato ejecutivo</p>
+        <p class="text-pw-cream/80 text-sm mt-3 leading-relaxed">9 meses, clases Virtual LIVE de 2 horas. Diseñado para el banquero que no puede dejar de trabajar mientras se capacita.</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 hover:border-pw-accent/60 transition">
+        <p class="font-display font-bold text-pw-accent2 text-sm uppercase tracking-widest">Material de por vida</p>
+        <p class="text-pw-cream/80 text-sm mt-3 leading-relaxed">Todos los modelos, casos y materiales quedan disponibles post-programa: recursos para usar con clientes durante toda la carrera.</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 hover:border-pw-accent/60 transition">
+        <p class="font-display font-bold text-pw-accent2 text-sm uppercase tracking-widest">Certificación con sello PWMI</p>
+        <p class="text-pw-cream/80 text-sm mt-3 leading-relaxed">Reconocida como diferenciador de carrera en las principales instituciones de banca patrimonial y privada: BBVA, Santander, Banorte, HSBC, Actinver, Monex, GBM.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section id="curriculum" class="py-24">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <p class="font-display font-semibold text-pw-gold tracking-[0.25em] text-xs uppercase">Curriculum</p>
+      <h2 class="font-display font-bold uppercase text-pw-cream text-2xl sm:text-4xl mt-4" style="letter-spacing:0.08em;">Temario — 12 módulos avanzados</h2>
+      <div class="accent-line"></div>
+      <p class="italic text-pw-mist text-lg">180 horas · 90 sesiones de 2 horas · 9 meses de transformación profesional</p>
+    </div>
+
+    <div class="mt-14 space-y-4" id="acc">
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M1</span>FX Avanzado — Gestión de Riesgo Cambiario</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Gestionar riesgo cambiario con instrumentos sofisticados y asesorar a clientes con exposición multi-divisa, incluyendo empresas nearshoring con flujos USD/MXN de hasta $50M.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Mercado FX interbancario: liquidez, microestructura y participantes clave</li>
+            <li>Carry trade: paridad de tasas de interés (CIP/UIP) y aplicación práctica</li>
+            <li>Forwards NDF: mecanismo, pricing y diferencias con forwards entregables</li>
+            <li>Opciones sobre tipo de cambio: vanilla y barrier (knock-in/knock-out)</li>
+            <li>Cross-currency swaps básicos: estructura, pricing e interpretación económica</li>
+            <li>Estrategias de cobertura corporativa para empresas nearshoring (ingresos USD, gastos MXN)</li>
+            <li>FX overlay en portafolios internacionales</li>
+            <li>Flujos de capital, balanza de pagos de México e impacto en el tipo de cambio</li>
+            <li>Política monetaria Fed/Banxico: diferenciales de tasa y comportamiento USD/MXN</li>
+            <li>Geopolítica USMCA y aranceles: impacto en el MXN</li>
+            <li>Gestión de posiciones FX: P&amp;L, mark-to-market, márgenes y riesgo de liquidez</li>
+            <li>Regulación FX en México: CNBV y circulares Banxico</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: estrategia FX completa para empresa Tier 1 nearshoring en Nuevo León con $50M MXN en flujos cross-border, con presentación ejecutiva al CFO.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M2</span>Fixed Income Avanzado — Crédito, Curvas y Duración</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Construir portafolios de renta fija sofisticados optimizando duración modificada, convexidad y spread de crédito.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Construcción de curvas: bootstrapping, interpolación, curvas par/spot/forward</li>
+            <li>Duración de Macaulay, duración modificada y key rate duration (KRD)</li>
+            <li>Convexidad y su impacto en escenarios de alta volatilidad de tasas</li>
+            <li>Inmunización de portafolios: asset-liability matching</li>
+            <li>Crédito corporativo mexicano: certificados bursátiles, papel comercial, bonos</li>
+            <li>Spread de crédito: OAS, Z-spread y default risk</li>
+            <li>High yield vs investment grade: trade-offs y rating migration</li>
+            <li>Bonos verdes y sustentables; securitización básica (BORHIS, CKDs de deuda)</li>
+            <li>Estrategias bullet, barbell y ladder según escenario de tasas</li>
+            <li>Relative value trading y repo / mercado de dinero</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: portafolio de renta fija de $10M MXN optimizado por duración y spread, con stress test de alza de tasas de 150bps.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M3</span>Equities Avanzado — Fundamental y Sector Rotation</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Stock picking con modelos de valoración institucionales y rotación sectorial según ciclo económico y contexto nearshoring.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>DCF avanzado (FCFF/FCFE) y modelo de dividendos (DDM)</li>
+            <li>Suma de partes (SOTP): valorar conglomerados y holdings</li>
+            <li>Lectura profunda de estados financieros: NOI, FCF, EBITDA ajustado, leverage</li>
+            <li>Calidad de earnings: ajustes contables y one-time charges</li>
+            <li>Sector rotation según ciclo económico</li>
+            <li>Análisis técnico intermedio: RSI, MACD, Bollinger, Fibonacci, volumen</li>
+            <li>Mercados internacionales: ADRs mexicanos y ETFs de emergentes</li>
+            <li>Emisoras nearshoring México beneficiadas por USMCA e IED</li>
+            <li>IPOs y acceso pre-IPO; ESG screening y su impacto en valuación</li>
+            <li>Watchlist sectorial y formato de equity research report institucional</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: reporte de equity research de 3 emisoras mexicanas nearshoring + portafolio de equities de $5M MXN.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M4</span>Derivados Intermedios — Opciones, Swaps y Coberturas</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Diseñar estrategias de cobertura y generación de rendimiento con opciones y swaps para portafolios complejos.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Pricing de opciones (Black-Scholes) y variables de mercado</li>
+            <li>Greeks completos: Delta, Gamma, Vega, Theta, Rho</li>
+            <li>Estrategias direccionales: bull/bear spreads, ratio spreads</li>
+            <li>Estrategias de volatilidad: straddle, strangle, butterfly, condor</li>
+            <li>Income: covered call, cash-secured put, collar; protective put y roll</li>
+            <li>Swaps de tasa de interés (IRS): estructura y convenciones de mercado</li>
+            <li>Caps, floors y collars de tasa para créditos de tasa variable</li>
+            <li>Equity-linked notes y notas con capital protegido + upside</li>
+            <li>Warrants y productos estructurados disponibles en México</li>
+            <li>MexDer vs OTC: márgenes, riesgo de contraparte, ISDA/CSA básico</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: estructurar producto de capital protegido + upside en equity para cliente de $8M MXN con presentación ejecutiva.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M5</span>Trading Economics e Inteligencia Macro-Geopolítica</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Interpretar macro global, ciclos avanzados y geopolítica para decidir con sofisticación y comunicar visión estratégica.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Ciclos económicos avanzados: Kondratiev y ciclo de crédito (Minsky)</li>
+            <li>Política monetaria comparada: Fed, BCE, BoJ, Banxico</li>
+            <li>Curva de Phillips, regla de Taylor y proyección de tasas</li>
+            <li>Geopolítica y mercados: renegociación USMCA 2026, aranceles USA-China</li>
+            <li>Indicadores nearshoring: PMI manufacturero, inventarios, CAPEX industrial</li>
+            <li>Commodities y México: petróleo, maíz, cobre, litio</li>
+            <li>El factor China y regímenes de tipo de cambio en emergentes</li>
+            <li>Escenarios macro con Monte Carlo para variables clave</li>
+            <li>Comunicación de outlook macro a clientes CEO/CFO</li>
+            <li>Reporte estratégico trimestral accionable</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: reporte estratégico "Outlook 2027" con escenarios base/bull/bear e implicaciones de portafolio para empresario Tier 1.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M6</span>Perfilamiento Avanzado y Behavioral Finance</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Detectar sesgos cognitivos, perfilar multi-generaciones y diseñar propuestas de valor hiperpersonalizadas.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Behavioral finance profundo: sistema 1 vs 2 (Kahneman), prospect theory</li>
+            <li>Los 10 sesgos principales: loss aversion, framing, anchoring, overconfidence y más</li>
+            <li>Perfilamiento multi-generacional: patriarca, cónyuge, next-gen</li>
+            <li>Necesidades complejas: liquidity events, divorcio patrimonial, sudden wealth</li>
+            <li>Cuestionarios avanzados de riesgo y suitability (MiFID adaptado a México)</li>
+            <li>Segmentación psicográfica: 5 arquetipos del cliente patrimonial avanzado</li>
+            <li>Persuasión ética: principios de Cialdini aplicados al wealth management</li>
+            <li>Manejo de clientes en crisis de mercado y eventos de vida</li>
+            <li>Design thinking para la propuesta de valor por perfil</li>
+            <li>Expediente del cliente CNBV-compliant</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: plan de servicio integral para familia empresaria de 3 generaciones con conflicto sucesorio activo.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M7</span>Asset Allocation Intermedio y Alternativas</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Portafolios multi-activo con 10–20% en alternativas usando modelos avanzados y due diligence institucional.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Modelo Black-Litterman: combinar views de mercado con equilibrio</li>
+            <li>Risk parity: portafolio por contribución de riesgo igual</li>
+            <li>Alternativas: iliquidity premium y su rol en portafolios $500k+ USD</li>
+            <li>Private credit: CKDs de deuda, direct lending, mezzanine en México</li>
+            <li>Private equity intro: VC, growth equity, buyouts y acceso en México</li>
+            <li>REITs/FIBRAS: valuación, distribuciones y nearshoring industrial</li>
+            <li>Infraestructura: TRACs y CKDs; correlación con inflación</li>
+            <li>Hedge funds básicos: L/S equity, macro global, arbitrage, fees</li>
+            <li>Crypto como asset class: Bitcoin, Ethereum, stablecoins; custody y regulación CNBV</li>
+            <li>Co-inversión y due diligence institucional de fondos alternativos</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: propuesta de portafolio de $800k USD con 15% alternativas, defendida ante comité de inversión mock.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M8</span>Fideicomisos e Introducción a Family Governance</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Estructurar fideicomisos en México como herramienta de sucesión y empresa e introducir gobierno familiar.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Marco legal del fideicomiso: fideicomitente, fiduciario, fideicomisario</li>
+            <li>Fideicomiso de administración, de inversión, de garantía y testamentario</li>
+            <li>Fideicomiso empresarial: separar patrimonio personal del negocio</li>
+            <li>Costos reales: comisiones, honorarios e impuestos de transmisión</li>
+            <li>Family governance: por qué las familias destruyen riqueza en 3 generaciones</li>
+            <li>Protocolo familiar y family constitution intro</li>
+            <li>Facilitación de family meetings con agenda tipo</li>
+            <li>Educación de next-gen para herederos responsables</li>
+            <li>El punto ciego sucesorio: 81% de herederos cambia de firma — cómo evitarlo</li>
+            <li>Coordinación con notarios, abogados y fiscalistas</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: family constitution básica + estructura fiduciaria para familia nearshoring con 2 generaciones activas.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M9</span>Fiscalidad Intermedia México–USA y Nearshoring</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Navegar la fiscalidad cross-border con precisión para asesorar a clientes nearshoring y coordinar con fiscalistas.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Tratado fiscal México–USA: artículos clave y doble imposición</li>
+            <li>Retención de ISR en inversiones extranjeras para mexicanos</li>
+            <li>FATCA avanzado y CRS/AEOI: quién reporta, qué se reporta</li>
+            <li>Régimen fiscal de inversiones en USA: dividendos, ganancias, herencias</li>
+            <li>LLC vs Corporation para inversionistas mexicanos</li>
+            <li>Real estate en USA: FIRPTA, ITIN, 1031 exchanges y planeación sucesoria</li>
+            <li>Transfer pricing básico para operaciones México–USA</li>
+            <li>Estímulos fiscales en zonas nearshoring y regímenes especiales</li>
+            <li>Tax planning anual: diferimiento y optimización de carteras</li>
+            <li>Declaración anual, activos en el extranjero y FBAR</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: plan fiscal cross-border para familia empresaria Tier 1 con operaciones en Nuevo León y subsidiaria en Texas.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M10</span>Insurance Avanzado y Gestión Integral de Riesgos</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Insurance como herramienta estratégica de protección, sucesión y optimización fiscal del plan patrimonial completo.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Insurance wrappers y unit-linked: inversión + seguro fiscalmente eficiente</li>
+            <li>PPLI (Private Placement Life Insurance)</li>
+            <li>Key-man insurance: valorar la vida de un socio clave</li>
+            <li>D&amp;O: coberturas, exclusiones y tendencias en México</li>
+            <li>Captive insurance intro para empresa familiar mediana</li>
+            <li>Umbrella liability para empresarios</li>
+            <li>Seguros de patrimonio: arte, colecciones, bienes raíces de lujo</li>
+            <li>Beneficios fiscales: deducibilidad, impuesto diferido, herencia libre</li>
+            <li>Insurance como liquidez sucesoria y buy-sell agreements</li>
+            <li>Análisis de pólizas existentes: gaps y sobrecoberturas</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: paquete integral de 5 pólizas coordinadas (vida + key-man + D&amp;O + umbrella + patrimonio) para empresario Tier 1.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M11</span>Liderazgo, Negociación e Inteligencia Estratégica</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Liderar reuniones complejas, negociar con clientes sofisticados y múltiples stakeholders familiares.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Inteligencia emocional avanzada en contextos de alto estrés</li>
+            <li>Negociación Harvard: BATNA, ZOPA y creación de valor</li>
+            <li>Negociación multi-parte con familias de intereses distintos</li>
+            <li>Liderazgo del equipo bancario: analysts y especialistas de producto</li>
+            <li>Mediación de conflictos inter-generacionales</li>
+            <li>Presentaciones ejecutivas de alto nivel y storytelling financiero</li>
+            <li>Gestión del tiempo del banquero premium: segmentación y prioridades</li>
+            <li>Mentoring de banqueros junior y construcción de equipo</li>
+            <li>Red de referidos premium: notarios, abogados, contadores</li>
+            <li>Strategic thinking: visión de 3–5 años para la cartera propia</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone: simulación de negociación y cierre de plan de $5M MXN con familia empresaria de 3 stakeholders, evaluada por panel.</p>
+        </div>
+      </div>
+
+      <div class="border border-pw-mist/15 rounded-xl overflow-hidden">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 text-left px-6 py-5 hover:bg-pw-navy/30 transition" onclick="accToggle(this)">
+          <span class="font-display font-semibold text-pw-cream text-sm sm:text-base"><span class="text-pw-accent2 font-bold mr-3">M12</span>Capstone Final Integrador + Wealth Tech y Digital Assets</span>
+          <span class="chev font-display text-pw-accent2 text-2xl leading-none">+</span>
+        </button>
+        <div class="acc-content px-6">
+          <p class="italic text-pw-mist text-sm mb-4">15 horas · 8 sesiones — Integrar los 12 módulos en un Full Wealth Plan avanzado y dominar las herramientas tecnológicas del banquero de la próxima década.</p>
+          <ul class="text-pw-cream/85 text-sm space-y-2 list-disc pl-5 leading-relaxed">
+            <li>Wealth Tech stack: CRM avanzado, portfolio reporting, onboarding digital y KYC</li>
+            <li>Robo-advisors: cuándo usarlos y cómo diferenciarse</li>
+            <li>AI en wealth management: LLMs para research, reportes y análisis</li>
+            <li>Crypto portfolio management: Bitcoin, Ethereum y stablecoins</li>
+            <li>DeFi intro: lending protocols y yield farming — riesgos y oportunidades</li>
+            <li>Tokenización de activos reales y perspectivas para México</li>
+            <li>NFTs y arte digital: evaluación, custody y riesgo</li>
+            <li>Compliance de activos digitales: AML/KYC, LFPIORPI, regulación CNBV</li>
+            <li>El "operating system" del banquero: hábitos, herramientas y procesos</li>
+            <li>Full Wealth Plan integrador: ensamblar todos los módulos en un plan accionable</li>
+          </ul>
+          <p class="text-pw-gold text-sm mt-4 mb-6 italic">Capstone final: Full Wealth Plan de 9 dimensiones para cliente de $800k USD, con defensa de 30 minutos ante panel profesional y Q&amp;A de 20 minutos.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DIRIGIDO A -->
+<section class="py-24 bg-pw-ink/40">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <p class="font-display font-semibold text-pw-gold tracking-[0.25em] text-xs uppercase">Dirigido a</p>
+      <h2 class="font-display font-bold uppercase text-pw-cream text-2xl sm:text-4xl mt-4" style="letter-spacing:0.08em;">Perfiles que se transforman</h2>
+      <div class="accent-line"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 mt-12">
+      <div class="border border-pw-mist/15 rounded-2xl p-8">
+        <p class="font-display font-bold text-pw-accent2 uppercase tracking-widest text-sm mb-6">Banca · Sell side</p>
+        <ul class="text-pw-cream/85 space-y-3 list-disc pl-5 leading-relaxed">
+          <li>Banqueros con 1–3+ años en banca patrimonial o privada</li>
+          <li>Gerentes de sucursal con portafolio de clientes patrimoniales</li>
+          <li>Egresados PWMI Nivel I o programa equivalente certificado</li>
+          <li>Asesores de inversión que buscan clientes de $3M–$15M MXN</li>
+          <li>Promotores de banca privada en etapa de transición</li>
+          <li>Ejecutivos de cuenta con exposición a clientes nearshoring</li>
+        </ul>
+      </div>
+      <div class="border border-pw-mist/15 rounded-2xl p-8">
+        <p class="font-display font-bold text-pw-accent2 uppercase tracking-widest text-sm mb-6">Independiente · Buy side</p>
+        <ul class="text-pw-cream/85 space-y-3 list-disc pl-5 leading-relaxed">
+          <li>Asesores independientes con cartera en crecimiento ($2M+ MXN)</li>
+          <li>Inversionistas sofisticados dueños de empresas Tier 1/2 nearshoring</li>
+          <li>Directores financieros con patrimonio personal</li>
+          <li>Family offices en formación ($30M–$100M MXN)</li>
+          <li>Contadores y abogados que asesoran a clientes de alto patrimonio</li>
+          <li>Ejecutivos con compensaciones en USD y exposición cross-border</li>
+        </ul>
+      </div>
+    </div>
+    <p class="italic text-pw-mist text-center mt-10 max-w-3xl mx-auto">Prerrequisito: haber completado PWMI Nivel I o programa equivalente acreditado, o contar con 1–2 años de experiencia verificable en banca patrimonial o privada con clientes activos.</p>
+  </div>
+</section>
+
+<!-- CUERPO ACADÉMICO -->
+<section class="py-24">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <p class="font-display font-semibold text-pw-gold tracking-[0.25em] text-xs uppercase">Cuerpo académico</p>
+      <h2 class="font-display font-bold uppercase text-pw-cream text-2xl sm:text-4xl mt-4" style="letter-spacing:0.08em;">Practitioners, no teóricos</h2>
+      <div class="accent-line"></div>
+      <p class="text-pw-cream/85 text-lg max-w-3xl mx-auto leading-relaxed">PWMI fue fundado por ex-directores senior de <strong class="text-pw-accent2">UBS Private Banking, JPMorgan Private Bank, HSBC Global Private Banking</strong> y family offices líderes — profesionales que han gestionado carteras de $100M+ USD con el rigor suizo-singapurense adaptado a la realidad mexicana.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+      <div class="border border-pw-mist/15 rounded-xl p-7 text-center">
+        <p class="font-display font-bold text-pw-cream text-sm uppercase tracking-widest">Directores de banca privada</p>
+        <p class="text-pw-mist text-sm mt-3 italic">En activo en las principales instituciones financieras de México</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 text-center">
+        <p class="font-display font-bold text-pw-cream text-sm uppercase tracking-widest">Portfolio managers</p>
+        <p class="text-pw-mist text-sm mt-3 italic">De family offices con mandatos multi-activo y alternativas</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 text-center">
+        <p class="font-display font-bold text-pw-cream text-sm uppercase tracking-widest">Fiscalistas cross-border</p>
+        <p class="text-pw-mist text-sm mt-3 italic">Abogados especializados en el tratado México–USA, FATCA y CRS</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 text-center">
+        <p class="font-display font-bold text-pw-cream text-sm uppercase tracking-widest">Traders de derivados</p>
+        <p class="text-pw-mist text-sm mt-3 italic">Con experiencia en mercados internacionales y MexDer</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 text-center">
+        <p class="font-display font-bold text-pw-cream text-sm uppercase tracking-widest">Actuarios institucionales</p>
+        <p class="text-pw-mist text-sm mt-3 italic">Especialistas en seguros avanzados, wrappers y key-man</p>
+      </div>
+      <div class="border border-pw-mist/15 rounded-xl p-7 text-center">
+        <p class="font-display font-bold text-pw-cream text-sm uppercase tracking-widest">Mentores senior</p>
+        <p class="text-pw-mist text-sm mt-3 italic">Ex-UBS, JPMorgan y HSBC; ninguno sin haber cerrado cuentas de $5M+</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCIA -->
+<section class="py-16 bg-pw-accent/10 border-y border-pw-accent/40">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="font-display font-bold uppercase text-pw-accent2 text-lg sm:text-2xl" style="letter-spacing:0.15em;">Cupo limitado</p>
+    <div class="accent-line"></div>
+    <p class="font-display font-semibold text-pw-cream text-base sm:text-xl uppercase" style="letter-spacing:0.08em;">Inicio: Noviembre 2026 · Virtual LIVE</p>
+    <p class="italic text-pw-mist mt-4">Grupos reducidos para garantizar interacción directa con los instructores. Asegura tu lugar hoy.</p>
+  </div>
+</section>
+
+<!-- ===== RISKMATHICS SALES MACHINE (inyectable) ===== -->
+<section id="rm-enroll" style="background:linear-gradient(135deg,#1B2A4A,#0D1424);color:#fff;padding:64px 20px;font-family:'Poppins',Arial,sans-serif;">
+  <div style="max-width:660px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:28px;">
+      <div style="color:#C9A84C;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
+      <h2 style="font-size:34px;margin:12px 0 8px;font-weight:800;line-height:1.15;">Asegura tu lugar</h2>
+      <p style="color:#A8B4CC;font-size:16px;margin:0;font-family:'Lora',Georgia,serif;">Déjanos tus datos, verifica tu WhatsApp y recibe el temario completo. Sin compromiso.</p>
+    </div>
+    <div style="background:#fff;color:#1f2937;border-radius:18px;padding:32px;box-shadow:0 30px 70px rgba(0,0,0,.3);">
+      <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:12px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <input name="nombre" placeholder="Nombre" required style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;">
+          <input name="apellido" placeholder="Apellido" style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;">
+        </div>
+        <input type="email" name="email" placeholder="Email corporativo" required style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <input name="puesto" placeholder="Puesto" style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;">
+          <input name="empresa" placeholder="Institución / Empresa" style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;">
+        </div>
+        <input name="whatsapp" placeholder="WhatsApp (ej. +52...)" required style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;">
+        <button type="submit" style="background:linear-gradient(135deg,#D96A3B,#C4572A);color:#fff;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;">Quiero el temario</button>
+        <p style="font-size:12px;color:#8a94a6;margin:0;text-align:center;">🔒 Te enviamos un código por SMS para verificar. Datos protegidos.</p>
+      </form>
+      <div id="rm-verify" style="display:none;"></div>
+      <div id="rm-thanks" style="display:none;background:#ecfdf5;border:1px solid #6ee7b7;color:#065f46;padding:20px;border-radius:14px;font-size:15px;">✅ <b>¡Listo!</b> Recibimos y verificamos tus datos. Te enviamos el temario y un asesor te contactará.</div>
+      <div style="margin-top:24px;padding-top:22px;border-top:1px solid #eef1f6;text-align:center;">
+        <div style="font-size:13px;color:#6b7280;letter-spacing:1px;">O INSCRÍBETE Y PAGA DIRECTO</div>
+        <div style="font-size:30px;font-weight:800;color:#1B2A4A;margin:8px 0 4px;">USD $<span>7,500</span> <span style="font-size:14px;color:#6b7280;font-weight:500;">+ IVA</span></div>
+        <div style="display:grid;gap:10px;margin-top:16px;">
+          <a id="rm-paypal" href="" target="_blank" rel="noopener" style="background:#C9A84C;color:#241803;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;">Pagar con PayPal · 6 MSI</a>
+          <a id="rm-stripe" href="https://buy.stripe.com/bJe28j8nt06kdYZ93b2Ry1D" target="_blank" rel="noopener" style="background:#C4572A;color:#fff;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;">Pagar con tarjeta · Stripe</a>
+        </div>
+        <p style="font-size:11px;color:#9aa4b4;margin-top:12px;">100% seguro · SSL · RiskMathics Financial Institute</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+const RM_CFG={id:"bancapatrimonial2",folleto:"https://riskmathics-folletos-2026.s3.amazonaws.com/banca-patrimonial-nivel2-2026.pdf",paypal:"",stripe:"https://buy.stripe.com/bJe28j8nt06kdYZ93b2Ry1D"};
+const RM_VURL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/verify-lead";
+const RM_VKEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmZmRzZ3ZnY3Ztb2pvYmZpdWF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzOTQ0NzQsImV4cCI6MjA5MDk3MDQ3NH0.7VKn7st3POLRTLIXx9Y4gRjXbh8v_BKXblc7vFIVu-U";
+let RM_LEAD=null;
+(function(){var pp=document.getElementById('rm-paypal');if(pp&&!RM_CFG.paypal)pp.style.display='none';var sp=document.getElementById('rm-stripe');if(sp&&!RM_CFG.stripe)sp.style.display='none';})();
+async function rmPost(p){const r=await fetch(RM_VURL,{method:"POST",headers:{"Content-Type":"application/json","apikey":RM_VKEY,"Authorization":"Bearer "+RM_VKEY},body:JSON.stringify(p)});return r.json();}
+async function rmSubmit(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));let phone=(d.whatsapp||"").trim().replace(/[\s\-()]/g,"");if(phone&&!phone.startsWith("+"))phone="+52"+phone.replace(/^0+/,"");if(!phone||phone.length<10){alert("Escribe tu WhatsApp con lada (ej +52...).");return false;}d.phone=phone;d.curso=RM_CFG.id;d.folleto=RM_CFG.folleto;RM_LEAD=d;const b=f.querySelector('button[type=submit]');b.textContent="Enviando código...";b.disabled=true;let res;try{res=await rmPost({action:"start",phone:phone,channel:"sms"});}catch(_){res={};}if(res&&(res.status==="pending"||res.ok)){f.style.display="none";rmShowCode(phone);}else{b.textContent="Quiero el temario";b.disabled=false;alert("No pudimos enviar el código. Revisa tu número.");}return false;}
+function rmShowCode(phone){var c=document.getElementById('rm-verify');c.innerHTML='<p style="margin:0 0 12px;font-size:15px;color:#1f2937;">📲 Te enviamos un código por SMS a <b>'+phone+'</b>. Ingrésalo:</p><input id="rm-otp" inputmode="numeric" placeholder="Código de 6 dígitos" style="width:100%;padding:14px;border:1px solid #d8dee9;border-radius:10px;font-size:22px;text-align:center;letter-spacing:8px;margin-bottom:12px;"><button type="button" onclick="rmVerify()" style="width:100%;background:linear-gradient(135deg,#D96A3B,#C4572A);color:#fff;font-weight:800;font-size:16px;border:none;padding:14px;border-radius:10px;cursor:pointer;">Verificar y recibir temario</button><p id="rm-vmsg" style="font-size:12px;color:#8a94a6;margin-top:8px;"></p>';c.style.display="block";document.getElementById('rm-otp').focus();}
+async function rmVerify(){var code=(document.getElementById('rm-otp').value||"").trim();var m=document.getElementById('rm-vmsg');if(code.length<4){m.textContent="Escribe el código completo.";return;}m.textContent="Verificando...";var res;try{res=await rmPost({action:"check",phone:RM_LEAD.phone,code:code,email:RM_LEAD.email,nombre:RM_LEAD.nombre,apellido:RM_LEAD.apellido,puesto:RM_LEAD.puesto,empresa:RM_LEAD.empresa,curso:RM_CFG.id,folleto:RM_CFG.folleto});}catch(_){res={};}if(res&&res.verified){document.getElementById('rm-verify').style.display="none";document.getElementById('rm-thanks').style.display="block";if(RM_CFG.folleto)window.open(RM_CFG.folleto,'_blank');}else{m.textContent="Código incorrecto o expirado. Intenta de nuevo.";}}
+</script>
+<!-- ===== /SALES MACHINE ===== -->
+
+<!-- FOOTER -->
+<footer class="py-14 bg-pw-ink border-t border-pw-mist/10">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="font-display font-bold tracking-[0.2em] text-pw-cream text-sm uppercase">PWMI · Private Wealth Management Institute</p>
+    <p class="italic text-pw-mist text-sm mt-3">Una iniciativa de RiskMathics Financial Institute — Formando a los Chief Wealth Officers del México del nearshoring.</p>
+    <p class="font-display text-[11px] text-pw-mist/70 tracking-widest uppercase mt-6">Programa Ejecutivo de Banca Patrimonial Holística · Nivel II — Avanzado · Virtual LIVE · Noviembre 2026</p>
+    <p class="font-display text-[11px] text-pw-mist/50 tracking-widest uppercase mt-2">Contacto: growth@riskmathics.com</p>
+  </div>
+</footer>
+
+<script>
+function accToggle(btn){
+  var content = btn.nextElementSibling;
+  var isOpen = content.classList.contains('open');
+  document.querySelectorAll('#acc .acc-content.open').forEach(function(c){ c.classList.remove('open'); });
+  document.querySelectorAll('#acc .acc-btn.open').forEach(function(b){ b.classList.remove('open'); });
+  if(!isOpen){ content.classList.add('open'); btn.classList.add('open'); }
+}
+document.addEventListener('DOMContentLoaded', function(){
+  var ctx = document.getElementById('wealthChart');
+  if(!ctx || typeof Chart === 'undefined') return;
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['2016','2018','2020','2022','2024','2026e','2028e','2030e'],
+      datasets: [{
+        label: 'Patrimonio financiero global (billones USD)',
+        data: [205, 228, 250, 274, 305, 331, 362, 398],
+        borderColor: '#C4572A',
+        backgroundColor: 'rgba(196,87,42,0.16)',
+        fill: true,
+        tension: 0.35,
+        pointBackgroundColor: '#C9A84C',
+        pointBorderColor: '#C4572A',
+        pointRadius: 4
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: '#FAF8F0', font: { family: 'Poppins', size: 12 } } },
+        tooltip: { backgroundColor: '#1B2A4A', titleFont: { family: 'Poppins' }, bodyFont: { family: 'Lora' } }
+      },
+      scales: {
+        y: { grid: { color: 'rgba(168,180,204,0.12)' }, ticks: { color: '#A8B4CC', font: { family: 'Poppins', size: 11 }, callback: function(v){ return '$' + v + 'T'; } } },
+        x: { grid: { display: false }, ticks: { color: '#A8B4CC', font: { family: 'Poppins', size: 11 } } }
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
